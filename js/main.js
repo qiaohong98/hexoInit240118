@@ -873,13 +873,13 @@ document.addEventListener('DOMContentLoaded', function () {
     openMobileMenu()
   }
 
+  refreshFn()
+  unRefreshFn()
+
   if($(".instagram").length) {
-    require(['/js/photo.js', '/fancybox/jquery.fancybox.js', '/js/jquery.lazyload.js'], function(obj) {
+    require(['/js/photo.js', '/fancybox/jquery.fancybox.min.js', '/js/jquery.lazyload.js'], function(obj) {
       obj.init();
     });
   }
 
-
-  refreshFn()
-  unRefreshFn()
 })
